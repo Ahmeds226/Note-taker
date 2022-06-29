@@ -1,7 +1,7 @@
 const express = require("express");
+const router = express.Router();
 const fs = require("fs");
 const uniqid = require("uniqid");
-const router = express.Router();
 
 router.get("/api/notes", (req, res) => {
   fs.readFile("db/db.json", "utf8", (err, data) => {
@@ -10,7 +10,6 @@ router.get("/api/notes", (req, res) => {
   });
 });
 
-//Adds note
 router.post("/api/notes", (req, res) => {
   fs.readFile("db/db.json", "utf8", (err, data) => {
     if (err) throw err;
@@ -28,7 +27,6 @@ router.post("/api/notes", (req, res) => {
   });
 });
 
-//Deletes note
 router.delete("/api/notes/:id", (req, res) => {
   fs.readFile("db/db.json", "utf8", (err, data) => {
     if (err) throw err;

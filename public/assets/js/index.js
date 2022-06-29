@@ -43,7 +43,7 @@ const saveNote = (note) =>
   });
 
 const deleteNote = (id) =>
-  fetch(`/api/notes${id}`, {
+  fetch(`/api/notes/${id}`, {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json",
@@ -150,8 +150,6 @@ const renderNoteList = async (notes) => {
 
       liEl.append(delBtnEl);
     }
-
-    console.log(createLi);
 
     return liEl;
   };
