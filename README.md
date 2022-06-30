@@ -10,7 +10,7 @@ The applications features are as follows:
 
 Deployed Link:
 
-Github pages or Heroku?
+<!-- Github pages or Heroku? -->
 
 ## Preview:
 
