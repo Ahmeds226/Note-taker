@@ -10,7 +10,7 @@ The applications features are as follows:
 
 Deployed Link:
 
-<!-- Github pages or Heroku? -->
+https://fierce-gorge-19170.herokuapp.com/notes
 
 ## Preview:
 
